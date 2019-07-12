@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Solver uses UI to set progression bar values.">
+    <Position X="5.448" Y="2.841" Height="0.45" Width="1.627" />
+  </Comment>
+  <Comment CommentText="Non-trival UI inputs are handled by seperate classes.">
+    <Position X="1.021" Y="3.487" Height="0.492" Width="2.231" />
+  </Comment>
+  <Comment CommentText="Use checker board and queens to show solutions.">
+    <Position X="11.531" Y="1.292" Height="1.823" Width="1.083" />
+  </Comment>
+  <Class Name="NQueenSolver" Collapsed="true">
+    <Position X="7.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAEMAAQAAAAIAAAAYCQAAAIAAIABIAAACBAhAACAA=</HashCode>
+      <FileName>Assets\Scripts\NQueenSolver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_UiController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameManager" Collapsed="true">
+    <Position X="3.75" Y="4.5" Width="6.5" />
+    <TypeIdentifier>
+      <HashCode>QAQBAAIAACAAABAAAAAAAAAAIAAAAgAAIEAAIBAABQA=</HashCode>
+      <FileName>Assets\Scripts\GameManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_UiController" />
+      <Field Name="m_CheckerBoard" />
+      <Field Name="m_NQueensSolver" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProgressionBarController" Collapsed="true">
+    <Position X="3.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gIQCAEEBAAAAAAAAEAACACAAACAEAAAAAAAIAyAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ProgressionBarController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CheckerBoardController" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgSAAMAAAgAAAAAEAAAAAIAACAAAAAAAAAAAAAEAhEA=</HashCode>
+      <FileName>Assets\Scripts\CheckerBoardController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="queens" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="QueenController" Collapsed="true">
+    <Position X="9.5" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABCAAAAAoAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\QueenController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SubtiitleController" Collapsed="true">
+    <Position X="1.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Scripts\SubtiitleController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIController" Collapsed="true">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SQQAAgAAAAAABAAAAAAEAIAAABCAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UIController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_ProgressionBar" />
+      <Field Name="m_Subtitle" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NQueenInputCallback" Collapsed="true">
+    <Position X="1" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QRAAAAAEACAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\NQueenInputCallback.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_GameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="StartStopButtonCallback" Collapsed="true">
+    <Position X="1" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\StartStopButtonCallback.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_GameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
